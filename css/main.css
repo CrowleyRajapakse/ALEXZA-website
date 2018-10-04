@@ -1461,7 +1461,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 80px;
+    width: 450px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -2101,6 +2101,7 @@ html.no-csstransitions .home-content__main {
     .home-content h2 {
         font-size: 3rem;
         text-color: white;
+        text-align: justify;
     }
     .home-content__main {
         padding-right: 70px;
@@ -2224,10 +2225,19 @@ html.no-csstransitions .home-content__main {
 .about-desc {
     font-size: 2.4rem;
     line-height: 1.75;
+    text-align: justify;
+    max-width: 1024px;
+}
+.about-descN {
+    font-size: 2.4rem;
+    line-height: 1.75;
     text-align: center;
     max-width: 1024px;
 }
-
+.gap {
+    align-content: center;
+    text-align: center;
+}
 
 /* ------------------------------------------------------------------- 
  * ## about stats
@@ -3386,6 +3396,12 @@ footer .row {
 .footer-main .right {
     padding-left: 40px;
 }
+.footer-main .center {
+    padding-right: 40px;
+    padding-left: 40px;
+    align-content: center;
+    align-items: center;
+}
 
 .footer-logo {
     display: block;
@@ -3393,10 +3409,10 @@ footer .row {
     padding: 0;
     outline: 0;
     border: none;
-    width: 85px;
-    height: 28px;
+    width: 170px;
+    height: 100px;
     background: url("../images/alexa_logo_new.png") no-repeat center;
-    background-size: 85px 28px;
+    background-size: 170px 100px;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
