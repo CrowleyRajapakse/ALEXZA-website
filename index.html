@@ -885,6 +885,9 @@ Along with that text formatting techniques such as size change, font-style chang
             <div class="col-full">
                 <ul class="header-nav__list">
                     <li class="smoothscroll">
+                        <a href="https://www.dropbox.com/s/6cke9ycsnzf68ga/Charter-Document-2018.doc?dl=0">Project Charter </a>
+                    </li>
+                    <li class="smoothscroll">
                        <a href="https://www.dropbox.com/s/j8wo2y38ea4x11c/18-104_ProjectProposal.docx?dl=0">Proposal Document </a>
                     </li>
                     <li class="smoothscroll">
@@ -946,11 +949,13 @@ Along with that text formatting techniques such as size change, font-style chang
         </div>
 
         <div class="row contact-content" data-aos="fade-up">
+
             <div class="contact-primary">
 
                 <h3 class="h6">Send Us A Message</h3>
+                <!--
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/srrajapakse1@gmail.com" >
                     <fieldset>
     
                     <div class="form-field">
@@ -966,7 +971,8 @@ Along with that text formatting techniques such as size change, font-style chang
                         <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button type="submit" id="submitForm" class="full-width btn--primary">Submit</button>
+
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
@@ -975,11 +981,26 @@ Along with that text formatting techniques such as size change, font-style chang
                                 <div class="bounce3"></div>
                             </div>
                         </div>
+
                     </div>
     
                     </fieldset>
                 </form>
 
+-->
+                <form name="contactForm" id="contactForm" method="POST">
+                    <input type="email" name="email" placeholder="Your email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button type="submit" class="full-width btn--primary">Send</button>
+                    <div class="submit-loader">
+                        <div class="text-loader">Sending...</div>
+                        <div class="s-loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                </form>
                 <!-- contact-warning -->
                 <div class="message-warning">
                     Something went wrong. Please try again.
@@ -1169,6 +1190,7 @@ Along with that text formatting techniques such as size change, font-style chang
 
     <!-- Java Script
     ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
