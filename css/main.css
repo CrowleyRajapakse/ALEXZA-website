@@ -1224,6 +1224,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #FFFFFF;
 }
 
+.display-green {
+    color: #39b54a;
+    font-size: 5.2rem;
+   
+}
+
 .display-2 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
@@ -2215,6 +2221,14 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 9rem;
     background-color: #39b54a;
     color: #010507;
+    position: relative;
+}
+
+.bout-version {
+    padding-top: 16.2rem;
+    color: #010507;
+    padding-bottom: 13.2rem;
+    background-color: #FFFFFF;
     position: relative;
 }
 
